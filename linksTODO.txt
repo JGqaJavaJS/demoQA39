@@ -1,0 +1,17 @@
+https://demoqa.com/buttons
+https://demoqa.com/links
+https://demoqa.com/browser-windows
+https://demoqa.com/nestedframes
+https://demoqa.com/modal-dialogs
+https://demoqa.com/slider
+
+-----------------------------------------------
+
+https://demoqa.com/dynamic-properties
+- maybe
+
+https://demoqa.com/upload-download
+StringBuffer
+Keys like tab enter ctrl c
+
+https://demoqa.com/droppable
