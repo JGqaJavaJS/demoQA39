@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class BasePage {
@@ -66,6 +67,29 @@ public class BasePage {
     public void jsClick(String str) {
         JavascriptExecutor js = (JavascriptExecutor) AppManager.getDriver();
         js.executeScript(str);
+    }
+
+    public int getHandlesQuantity() {
+        // Get the window handles as a set
+        Set<String> windowHandles = AppManager.getDriver().getWindowHandles();
+
+        // Get the number of open tabs/windows
+        return windowHandles.size();
+    }
+
+    public void switchHandleTab(int  index) {
+        // Get the window handles as a set
+        Set<String> windowHandles = AppManager.getDriver().getWindowHandles();
+
+        // Switch to the new tab (assuming it's the second tab, so we'll use index 1)
+        String newTabHandle = (String) windowHandles.toArray()[index];
+        AppManager.getDriver().switchTo().window(newTabHandle);
+        System.out.println("-------------------------------- switch handle with the index " + index);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 

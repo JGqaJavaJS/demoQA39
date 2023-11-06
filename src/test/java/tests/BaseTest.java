@@ -4,13 +4,13 @@ import manager.AppManager;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.asserts.SoftAssert;
-import pages.LinksPage;
-import pages.MainPage;
+import pages.*;
 
 public class BaseTest {
 
     MainPage mainPage = new MainPage();
     LinksPage linksPage = new LinksPage();
+    BrowserWindowsPage browserWindowsPage = new BrowserWindowsPage();
     SoftAssert softAssert = new SoftAssert();
 
     @BeforeSuite (alwaysRun = true)
