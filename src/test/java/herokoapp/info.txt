@@ -1,0 +1,21 @@
+driver.get("https://<username>:<password>@www.example.com/index.html")
+https://admin:admin@the-internet.herokuapp.com/basic_auth
+
+------------------
+https://www.browserstack.com/docs/automate/selenium/basic-http-authentication
+https://reflect.run/articles/testing-http-basic-authentication-in-selenium/
+------------------
+
+https://gurupreethkarnik.medium.com/how-to-handle-basic-and-digest-auth-using-selenium-6cb1a8e03c9f
+
+
+-------------
+
+driver.switchTo().activeElement()
+https://stackoverflow.com/questions/13936167/how-to-deal-with-modaldialog-using-selenium-webdriver
+
+------------------------
+http://www.java2s.com/example/java/java.awt/robot-press-enter-key.html
+
+to check robot: first need to click next need to unclick the button on the keyboard
+

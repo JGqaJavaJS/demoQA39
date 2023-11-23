@@ -17,4 +17,16 @@ public class NestedFramesTests extends BaseTestHA{
 //        Assert.assertEquals(nestedFramesPage.getFramesQuantity(), 2);
         Assert.assertEquals(quantity, 2);
     }
+
+    @Test
+    public void nestedFramesQuantity() {
+        nestedFramesPage.navigateToFramePage();
+        nestedFramesPage.clickBtnNestedFrames();
+        nestedFramesPage.switchToFrame(0);
+        int quantity = nestedFramesPage.getFramesQuantity();
+        System.out.println("-----------" + quantity);
+        Assert.assertEquals(quantity, 3);
+    }
+
+
 }

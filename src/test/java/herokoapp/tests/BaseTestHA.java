@@ -21,17 +21,3 @@ public class BaseTestHA {
     }
 }
 
-/*
-        // Find the iframe using its index (0-based)
-        WebElement iframeElement = driver.findElement(By.tagName("iframe"));//li
-
-        // Switch to the iframe by index
-        driver.switchTo().frame(iframeElement);
-
-        // Now, interact with elements inside the iframe
-        WebElement elementInsideIframe = driver.findElement(By.id("elementInsideIframe"));
-        elementInsideIframe.sendKeys("Text inside iframe");
-
-        // Switch back to the main content
-        driver.switchTo().defaultContent();
- */

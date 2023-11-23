@@ -15,7 +15,7 @@ public class BasePageHA {
         return AppManagerHerokoApp.getDriver().findElement(by);
     }
 
-    private List<WebElement> findElementsBase(By by) {
+    public List<WebElement> findElementsBase(By by) {
         return AppManagerHerokoApp.getDriver().findElements(by);
     }
 
